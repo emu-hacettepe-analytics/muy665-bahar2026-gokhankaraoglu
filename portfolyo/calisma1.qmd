@@ -16,7 +16,7 @@ title: "Çalışma 1"
 
 A\) Python B) SQL C) Tableau veya Power BI D) PyTorch
 
-**Doğru Cevap:** **B) SQL** \
+**Doğru Cevap:** **B) SQL**\
 
 ```{r}
 library(dslabs)
@@ -52,7 +52,7 @@ if (k %% 2 == 0) {
 }
 ```
 
-##  Tüm Veri Setindeki Toplam NA Sayısı
+## Tüm Veri Setindeki Toplam NA Sayısı
 
 ```{r}
 total_na <- sum(is.na(data))
@@ -66,13 +66,13 @@ na_by_column <- sort(colSums(is.na(data)), decreasing = TRUE)
 head(na_by_column, 8)
 ```
 
-## NA Değerlerini Değiştirerek Yeni DataFrame Oluşturma 
+## NA Değerlerini Değiştirerek Yeni DataFrame Oluşturma
 
 ```{r}
 new_data <- data
 ```
 
-##  Sayısal (numeric) sütunlarda NA değiştirme
+## Sayısal (numeric) sütunlarda NA değiştirme
 
 ```{r}
 numeric_cols <- sapply(new_data, is.numeric)
@@ -86,7 +86,7 @@ new_data[numeric_cols] <- lapply(
 )
 ```
 
-##  Character & Factor sütunlarda NA değiştirme
+## Character & Factor sütunlarda NA değiştirme
 
 ```{r}
 char_factor_cols <- sapply(new_data, function(x) is.character(x) | is.factor(x))
@@ -100,7 +100,7 @@ new_data[char_factor_cols] <- lapply(
 )
 ```
 
-##  Yeni Veri Çerçevesinde k Satırının Gösterilmesi 
+## Yeni Veri Çerçevesinde k Satırının Gösterilmesi
 
 ```{r}
 if (k %% 2 == 0) {
@@ -110,18 +110,18 @@ if (k %% 2 == 0) {
 }
 ```
 
-##  Yeni Veri Setindeki Toplam NA Sayısı
+## Yeni Veri Setindeki Toplam NA Sayısı
 
 ```{r}
 sum(is.na(new_data))
 ```
 
-##  NA Kontrolü 
+## NA Kontrolü
 
 ```{r}
 anyNA(new_data)
 ```
 
-##  
+## 
 
-##    
+## 
