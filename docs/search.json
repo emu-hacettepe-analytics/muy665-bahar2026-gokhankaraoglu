@@ -322,7 +322,7 @@
     "href": "portfolyo/calisma1.html",
     "title": "Çalışma 1",
     "section": "",
-    "text": "(Aşağıdakiler örnek olarak verilmiştir.)\nBu çalışmada 3 görevimiz var. Bu görevler….. Bunlara sırayla aşağıda cevap arıyoruz.",
+    "text": "1. Açık Uçlu Soru\nSoru:\nCevap:\n2. Çoktan Seçmeli Soru\nSoru: Cem Vardar hocamızın söyleşisinde, veri bilimi ve analitiği alanında kendini geliştirmek isteyen bir endüstri mühendisine, temel bir gereksinim olarak hangi aracı/dili öğrenmesini tavsiye etmektedir?\nA) Python B) SQL C) Tableau veya Power BI D) PyTorch\nDoğru Cevap: B) SQL\n\n\nlibrary(dslabs)\n\ndata(\"polls_us_election_2016\")\ndata &lt;- polls_us_election_2016",
     "crumbs": [
       "Çalışma 1"
     ]
@@ -549,7 +549,7 @@
     "href": "about.html#employements",
     "title": "Hakkımda",
     "section": "Employements",
-    "text": "Employements\n\nFirm xxx, position xx, year xxx\nFirm yyy, position yyy, year yyy"
+    "text": "Employements\n\nPanda Network, Full-Stack Developer 2021, 2023\nCambria, Full-Stack Developer 2022, 2023\nBK Mobil, Full-Stack Developer 2023, 2024\nGoIT, Education Mentor 2024, 2025\nFONET IT, Senior Frontend Developer 2025, present"
   },
   {
     "objectID": "about.html#internships",
@@ -564,5 +564,132 @@
     "title": "My Blog",
     "section": "",
     "text": "Bu sayfa yapım aşamasındadır.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "portfolyo/calisma1.html#sınav-soruları",
+    "href": "portfolyo/calisma1.html#sınav-soruları",
+    "title": "Çalışma 1",
+    "section": "",
+    "text": "1. Açık Uçlu Soru\nSoru:\nCevap:\n2. Çoktan Seçmeli Soru\nSoru: Cem Vardar hocamızın söyleşisinde, veri bilimi ve analitiği alanında kendini geliştirmek isteyen bir endüstri mühendisine, temel bir gereksinim olarak hangi aracı/dili öğrenmesini tavsiye etmektedir?\nA) Python B) SQL C) Tableau veya Power BI D) PyTorch\nDoğru Cevap: B) SQL\n\n\nlibrary(dslabs)\n\ndata(\"polls_us_election_2016\")\ndata &lt;- polls_us_election_2016",
+    "crumbs": [
+      "Çalışma 1"
+    ]
+  },
+  {
+    "objectID": "portfolyo/calisma1.html#kişisel-bilgiler",
+    "href": "portfolyo/calisma1.html#kişisel-bilgiler",
+    "title": "Çalışma 1",
+    "section": "Kişisel Bilgiler",
+    "text": "Kişisel Bilgiler\n\nmy_first &lt;- \"Gokhan\"\nmy_birth_year &lt;- 1991\nmy_first\n\n[1] \"Gokhan\"\n\nmy_birth_year\n\n[1] 1991",
+    "crumbs": [
+      "Çalışma 1"
+    ]
+  },
+  {
+    "objectID": "portfolyo/calisma1.html#k-değerinin-hesaplanması",
+    "href": "portfolyo/calisma1.html#k-değerinin-hesaplanması",
+    "title": "Çalışma 1",
+    "section": "k Değerinin Hesaplanması",
+    "text": "k Değerinin Hesaplanması\n\nk &lt;- (nchar(my_first) + my_birth_year) %% 15 + 8\nk\n\n[1] 10",
+    "crumbs": [
+      "Çalışma 1"
+    ]
+  },
+  {
+    "objectID": "portfolyo/calisma1.html#k-satırının-gösterilmesi-orijinal-veri",
+    "href": "portfolyo/calisma1.html#k-satırının-gösterilmesi-orijinal-veri",
+    "title": "Çalışma 1",
+    "section": "k Satırının Gösterilmesi (Orijinal Veri)",
+    "text": "k Satırının Gösterilmesi (Orijinal Veri)\n\nif (k %% 2 == 0) {\n  head(data, k)\n} else {\n  tail(data, k)\n}\n\n        state  startdate    enddate\n1        U.S. 2016-11-03 2016-11-06\n2        U.S. 2016-11-01 2016-11-07\n3        U.S. 2016-11-02 2016-11-06\n4        U.S. 2016-11-04 2016-11-07\n5        U.S. 2016-11-03 2016-11-06\n6        U.S. 2016-11-03 2016-11-06\n7        U.S. 2016-11-02 2016-11-06\n8        U.S. 2016-11-03 2016-11-05\n9  New Mexico 2016-11-06 2016-11-06\n10       U.S. 2016-11-04 2016-11-07\n                                                     pollster grade samplesize\n1                                    ABC News/Washington Post    A+       2220\n2                                     Google Consumer Surveys     B      26574\n3                                                       Ipsos    A-       2195\n4                                                      YouGov     B       3677\n5                                            Gravis Marketing    B-      16639\n6  Fox News/Anderson Robbins Research/Shaw & Company Research     A       1295\n7                                     CBS News/New York Times    A-       1426\n8                                NBC News/Wall Street Journal    A-       1282\n9                                                    Zia Poll  &lt;NA&gt;       8439\n10                                                   IBD/TIPP    A-       1107\n   population rawpoll_clinton rawpoll_trump rawpoll_johnson rawpoll_mcmullin\n1          lv           47.00         43.00            4.00               NA\n2          lv           38.03         35.69            5.46               NA\n3          lv           42.00         39.00            6.00               NA\n4          lv           45.00         41.00            5.00               NA\n5          rv           47.00         43.00            3.00               NA\n6          lv           48.00         44.00            3.00               NA\n7          lv           45.00         41.00            5.00               NA\n8          lv           44.00         40.00            6.00               NA\n9          lv           46.00         44.00            6.00               NA\n10         lv           41.20         42.70            7.10               NA\n   adjpoll_clinton adjpoll_trump adjpoll_johnson adjpoll_mcmullin\n1         45.20163      41.72430        4.626221               NA\n2         43.34557      41.21439        5.175792               NA\n3         42.02638      38.81620        6.844734               NA\n4         45.65676      40.92004        6.069454               NA\n5         46.84089      42.33184        3.726098               NA\n6         49.02208      43.95631        3.057876               NA\n7         45.11649      40.92722        4.341786               NA\n8         43.58576      40.77325        5.365788               NA\n9         44.82594      41.59978        7.870127               NA\n10        42.92745      42.23545        6.316175               NA",
+    "crumbs": [
+      "Çalışma 1"
+    ]
+  },
+  {
+    "objectID": "portfolyo/calisma1.html#tüm-veri-setindeki-toplam-na-sayısı",
+    "href": "portfolyo/calisma1.html#tüm-veri-setindeki-toplam-na-sayısı",
+    "title": "Çalışma 1",
+    "section": "Tüm Veri Setindeki Toplam NA Sayısı",
+    "text": "Tüm Veri Setindeki Toplam NA Sayısı\n\ntotal_na &lt;- sum(is.na(data))\ntotal_na\n\n[1] 11604",
+    "crumbs": [
+      "Çalışma 1"
+    ]
+  },
+  {
+    "objectID": "portfolyo/calisma1.html#sütun-başına-na-sayısı-ilk-8-sütun",
+    "href": "portfolyo/calisma1.html#sütun-başına-na-sayısı-ilk-8-sütun",
+    "title": "Çalışma 1",
+    "section": "Sütun Başına NA Sayısı (İlk 8 Sütun)",
+    "text": "Sütun Başına NA Sayısı (İlk 8 Sütun)\n\nna_by_column &lt;- sort(colSums(is.na(data)), decreasing = TRUE)\nhead(na_by_column, 8)\n\nrawpoll_mcmullin adjpoll_mcmullin  rawpoll_johnson  adjpoll_johnson \n            4178             4178             1409             1409 \n           grade       samplesize            state        startdate \n             429                1                0                0",
+    "crumbs": [
+      "Çalışma 1"
+    ]
+  },
+  {
+    "objectID": "portfolyo/calisma1.html#na-değerlerini-değiştirerek-yeni-dataframe-oluşturma",
+    "href": "portfolyo/calisma1.html#na-değerlerini-değiştirerek-yeni-dataframe-oluşturma",
+    "title": "Çalışma 1",
+    "section": "NA Değerlerini Değiştirerek Yeni DataFrame Oluşturma",
+    "text": "NA Değerlerini Değiştirerek Yeni DataFrame Oluşturma\n\nnew_data &lt;- data",
+    "crumbs": [
+      "Çalışma 1"
+    ]
+  },
+  {
+    "objectID": "portfolyo/calisma1.html#sayısal-numeric-sütunlarda-na-değiştirme",
+    "href": "portfolyo/calisma1.html#sayısal-numeric-sütunlarda-na-değiştirme",
+    "title": "Çalışma 1",
+    "section": "Sayısal (numeric) sütunlarda NA değiştirme",
+    "text": "Sayısal (numeric) sütunlarda NA değiştirme\n\nnumeric_cols &lt;- sapply(new_data, is.numeric)\n\nnew_data[numeric_cols] &lt;- lapply(\n  new_data[numeric_cols],\n  function(x) {\n    x[is.na(x)] &lt;- my_birth_year + k\n    x\n  }\n)",
+    "crumbs": [
+      "Çalışma 1"
+    ]
+  },
+  {
+    "objectID": "portfolyo/calisma1.html#character-factor-sütunlarda-na-değiştirme",
+    "href": "portfolyo/calisma1.html#character-factor-sütunlarda-na-değiştirme",
+    "title": "Çalışma 1",
+    "section": "Character & Factor sütunlarda NA değiştirme",
+    "text": "Character & Factor sütunlarda NA değiştirme\n\nchar_factor_cols &lt;- sapply(new_data, function(x) is.character(x) | is.factor(x))\n\nnew_data[char_factor_cols] &lt;- lapply(\n  new_data[char_factor_cols],\n  function(x) {\n    x[is.na(x)] &lt;- paste0(my_first, \"_\", k)\n    x\n  }\n)\n\nWarning in `[&lt;-.factor`(`*tmp*`, is.na(x), value = \"Gokhan_10\"): invalid factor\nlevel, NA generated\nWarning in `[&lt;-.factor`(`*tmp*`, is.na(x), value = \"Gokhan_10\"): invalid factor\nlevel, NA generated\nWarning in `[&lt;-.factor`(`*tmp*`, is.na(x), value = \"Gokhan_10\"): invalid factor\nlevel, NA generated",
+    "crumbs": [
+      "Çalışma 1"
+    ]
+  },
+  {
+    "objectID": "portfolyo/calisma1.html#yeni-veri-çerçevesinde-k-satırının-gösterilmesi",
+    "href": "portfolyo/calisma1.html#yeni-veri-çerçevesinde-k-satırının-gösterilmesi",
+    "title": "Çalışma 1",
+    "section": "Yeni Veri Çerçevesinde k Satırının Gösterilmesi",
+    "text": "Yeni Veri Çerçevesinde k Satırının Gösterilmesi\n\nif (k %% 2 == 0) {\n  head(new_data, k)\n} else {\n  tail(new_data, k)\n}\n\n        state  startdate    enddate\n1        U.S. 2016-11-03 2016-11-06\n2        U.S. 2016-11-01 2016-11-07\n3        U.S. 2016-11-02 2016-11-06\n4        U.S. 2016-11-04 2016-11-07\n5        U.S. 2016-11-03 2016-11-06\n6        U.S. 2016-11-03 2016-11-06\n7        U.S. 2016-11-02 2016-11-06\n8        U.S. 2016-11-03 2016-11-05\n9  New Mexico 2016-11-06 2016-11-06\n10       U.S. 2016-11-04 2016-11-07\n                                                     pollster grade samplesize\n1                                    ABC News/Washington Post    A+       2220\n2                                     Google Consumer Surveys     B      26574\n3                                                       Ipsos    A-       2195\n4                                                      YouGov     B       3677\n5                                            Gravis Marketing    B-      16639\n6  Fox News/Anderson Robbins Research/Shaw & Company Research     A       1295\n7                                     CBS News/New York Times    A-       1426\n8                                NBC News/Wall Street Journal    A-       1282\n9                                                    Zia Poll  &lt;NA&gt;       8439\n10                                                   IBD/TIPP    A-       1107\n   population rawpoll_clinton rawpoll_trump rawpoll_johnson rawpoll_mcmullin\n1          lv           47.00         43.00            4.00             2001\n2          lv           38.03         35.69            5.46             2001\n3          lv           42.00         39.00            6.00             2001\n4          lv           45.00         41.00            5.00             2001\n5          rv           47.00         43.00            3.00             2001\n6          lv           48.00         44.00            3.00             2001\n7          lv           45.00         41.00            5.00             2001\n8          lv           44.00         40.00            6.00             2001\n9          lv           46.00         44.00            6.00             2001\n10         lv           41.20         42.70            7.10             2001\n   adjpoll_clinton adjpoll_trump adjpoll_johnson adjpoll_mcmullin\n1         45.20163      41.72430        4.626221             2001\n2         43.34557      41.21439        5.175792             2001\n3         42.02638      38.81620        6.844734             2001\n4         45.65676      40.92004        6.069454             2001\n5         46.84089      42.33184        3.726098             2001\n6         49.02208      43.95631        3.057876             2001\n7         45.11649      40.92722        4.341786             2001\n8         43.58576      40.77325        5.365788             2001\n9         44.82594      41.59978        7.870127             2001\n10        42.92745      42.23545        6.316175             2001",
+    "crumbs": [
+      "Çalışma 1"
+    ]
+  },
+  {
+    "objectID": "portfolyo/calisma1.html#yeni-veri-setindeki-toplam-na-sayısı",
+    "href": "portfolyo/calisma1.html#yeni-veri-setindeki-toplam-na-sayısı",
+    "title": "Çalışma 1",
+    "section": "Yeni Veri Setindeki Toplam NA Sayısı",
+    "text": "Yeni Veri Setindeki Toplam NA Sayısı\n\nsum(is.na(new_data))\n\n[1] 429",
+    "crumbs": [
+      "Çalışma 1"
+    ]
+  },
+  {
+    "objectID": "portfolyo/calisma1.html#na-kontrolü",
+    "href": "portfolyo/calisma1.html#na-kontrolü",
+    "title": "Çalışma 1",
+    "section": "NA Kontrolü",
+    "text": "NA Kontrolü\n\nanyNA(new_data)\n\n[1] TRUE",
+    "crumbs": [
+      "Çalışma 1"
+    ]
+  },
+  {
+    "objectID": "about.html#cv",
+    "href": "about.html#cv",
+    "title": "Hakkımda",
+    "section": "CV",
+    "text": "CV\n Download CV"
   }
 ]
