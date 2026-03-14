@@ -2,15 +2,126 @@
 title: "Çalışma 1"
 ---
 
-\
-(Aşağıdakiler örnek olarak verilmiştir.)
+## Sınav Soruları
 
-Bu çalışmada 3 görevimiz var. Bu görevler..... Bunlara sırayla aşağıda cevap arıyoruz.
+**1. Açık Uçlu Soru**
 
-## (a)
+**Soru:**
+
+**Cevap:**
+
+**2. Çoktan Seçmeli Soru**
+
+**Soru:** Cem Vardar hocamızın söyleşisinde, veri bilimi ve analitiği alanında kendini geliştirmek isteyen bir endüstri mühendisine, temel bir gereksinim olarak hangi aracı/dili öğrenmesini tavsiye etmektedir?
+
+A\) Python B) SQL C) Tableau veya Power BI D) PyTorch
+
+**Doğru Cevap:** **B) SQL** \
 
 ```{r}
-1 + 1
+library(dslabs)
+
+data("polls_us_election_2016")
+data <- polls_us_election_2016
 ```
 
-## (b)
+## Kişisel Bilgiler
+
+```{r}
+my_first <- "Gokhan"
+my_birth_year <- 1991
+my_first
+my_birth_year
+
+```
+
+## **k Değerinin Hesaplanması**
+
+```{r}
+k <- (nchar(my_first) + my_birth_year) %% 15 + 8
+k
+```
+
+## k Satırının Gösterilmesi (Orijinal Veri)
+
+```{r}
+if (k %% 2 == 0) {
+  head(data, k)
+} else {
+  tail(data, k)
+}
+```
+
+##  Tüm Veri Setindeki Toplam NA Sayısı
+
+```{r}
+total_na <- sum(is.na(data))
+total_na
+```
+
+## **Sütun Başına NA Sayısı (İlk 8 Sütun)**
+
+```{r}
+na_by_column <- sort(colSums(is.na(data)), decreasing = TRUE)
+head(na_by_column, 8)
+```
+
+## NA Değerlerini Değiştirerek Yeni DataFrame Oluşturma 
+
+```{r}
+new_data <- data
+```
+
+##  Sayısal (numeric) sütunlarda NA değiştirme
+
+```{r}
+numeric_cols <- sapply(new_data, is.numeric)
+
+new_data[numeric_cols] <- lapply(
+  new_data[numeric_cols],
+  function(x) {
+    x[is.na(x)] <- my_birth_year + k
+    x
+  }
+)
+```
+
+##  Character & Factor sütunlarda NA değiştirme
+
+```{r}
+char_factor_cols <- sapply(new_data, function(x) is.character(x) | is.factor(x))
+
+new_data[char_factor_cols] <- lapply(
+  new_data[char_factor_cols],
+  function(x) {
+    x[is.na(x)] <- paste0(my_first, "_", k)
+    x
+  }
+)
+```
+
+##  Yeni Veri Çerçevesinde k Satırının Gösterilmesi 
+
+```{r}
+if (k %% 2 == 0) {
+  head(new_data, k)
+} else {
+  tail(new_data, k)
+}
+```
+
+##  Yeni Veri Setindeki Toplam NA Sayısı
+
+```{r}
+sum(is.na(new_data))
+```
+
+##  NA Kontrolü 
+
+```{r}
+anyNA(new_data)
+```
+
+##  
+
+##    
