@@ -690,6 +690,13 @@
     "href": "about.html#cv",
     "title": "Hakkımda",
     "section": "CV",
-    "text": "CV\n Download CV"
+    "text": "CV\n CV İndir"
+  },
+  {
+    "objectID": "about.html#çalıştığım-yerler",
+    "href": "about.html#çalıştığım-yerler",
+    "title": "Hakkımda",
+    "section": "Çalıştığım Yerler",
+    "text": "Çalıştığım Yerler\n\nPanda Network, Full-Stack Geliştirici 2021 – 2023\nCambria, Full-Stack Geliştirici 2022 – 2023\nBK Mobil, Full-Stack Geliştirici 2023 – 2024\nGoIT, Eğitim Mentörü 2024 – 2025\nFONET IT, Kıdemli Frontend Geliştirici 2025 – günümüz"
   }
 ]
