@@ -13,6 +13,8 @@ website:
         href: about.qmd
       - text: Gönderilerim
         href: posts.qmd
+      - text: Proje
+        href: proje.qmd
       - text: "MUY665 Ders Çıktıları"
         menu:
           - text: Ödevler

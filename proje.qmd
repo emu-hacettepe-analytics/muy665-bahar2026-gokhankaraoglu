@@ -59,10 +59,6 @@ renkler <- c(
   "Diğer"    = "#9D755D"
 )
 
-# Veri yoksa simüle et
-if (!file.exists("data/elektrik_gunluk.csv")) {
-  source("R/01_simulate_data.R")
-}
 ```
 
 # Proje Genel Bakış ve Kapsamı {.unnumbered}
@@ -184,8 +180,6 @@ Bu üç kaynağın birleştirilmesi; tek bir veri kaynağıyla elde edilemeyecek
 # Analiz
 
 ------------------------------------------------------------------------
-
-# Analiz
 
 ## Keşifsel Veri Analizi
 
